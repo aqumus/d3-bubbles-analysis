@@ -28,19 +28,18 @@ angular.module('d3BubbleChart', [])
 				                  .style("opacity", "0")
 				                  .style("display", "none");
 
-			    console.log(layers,"layers");
-
 			    d3.json('data.json',function(error,data){
        			if(error) throw error;
 
        				var legend_div = d3.select('#layer-0').append('div').attr("class","legend");//div for legends
-       				var svg_layer0 			= d3.select('#layer-0')
-       																.append('svg')
-       																// .attr("viewbox","0 0 1000 300")
-       																.attr("width",layerswidth)
-																			.attr("height", layersheight)
-																			.append('g');
-							var x = d3.scaleLinear().domain([0,100]).range([0,1000]);
+       				var svg_layer0 = d3.select('#layer-0')
+										.append('svg')
+										// .attr("viewbox","0 0 1000 300")
+										.attr("width",layerswidth)
+										.attr("height", layersheight)
+										.append('g');
+
+					var x = d3.scaleLinear().domain([0,100]).range([0,1000]);
 
        				var xAxis = d3.axisBottom(x);
 							svg_layer0.append('g').attr("class","axis")
@@ -50,46 +49,58 @@ angular.module('d3BubbleChart', [])
 							var colors_svg_layer0 = data.map(function(d){
 																				return getRandomColor();
 																			})
-
+       				var allCirclePosL0 =[];
        				svg_layer0.selectAll('circle')
        									.data(data)
        									.enter().append('circle')
-													.attr("r", function(d,i) { return (d.size)/2	 }) // first layer circle radius calculations
-           								.attr("cx",function(d,i){ 
-           									var intialSpacing = 100+100*i;
-           									var preCircleDiameter = i===0?0: data[i-1].size*2;
-           									return intialSpacing+ (preCircleDiameter) + d.size})
-           								.attr('cy',100)
-													.style("stroke",function(d,i){return colors_svg_layer0[i]})
-       										.style("fill", "none")
-       										.style("stroke-width", 2)
-       										.style("cursor", "pointer")    
-       										.style("pointer-events","visible")
-       										.on("click",function(d){
-       											console.log("clicked");
-       											getSecondLayer(d)})
-       										.each(function(data,i){
-       											var legend_span = legend_div.append('span').attr("class","legend-span")
+												.attr("r", function(d,i) { 
+													var r = (d.size)/2;
+													allCirclePosL0.push({r:r});
+													return 	r;
+												}) // first layer circle radius calculations
+         								.attr("cx",function(d,i){ 
+         									var intialSpacing = i!==0?0:150;
+       										var c = intialSpacing + allCirclePosL0[i].r;
+	       									if(i>0){
+	       										c = allCirclePosL0[i-1].c + allCirclePosL0[i-1].r + allCirclePosL0[i].r + 50;
+	       									}
+       										allCirclePosL0[i].c = c;
+       										// var preCircleDiameter = i===0?0: (Math.sqrt(d.potentialSales - i*100) / Math.PI)*2;
+       										// var renderedcenter = intialSpacing+ (preCircleDiameter) + 50;
+       										return c;
+       									})
+         								.attr('cy',100)
+												.style("stroke",function(d,i){return colors_svg_layer0[i]})
+     										.style("fill", "none")
+     										.style("stroke-width", 2)
+     										.style("cursor", "pointer")    
+     										.style("pointer-events","visible")
+     										.on("click",function(d){
+     											getSecondLayer(d)
+     										})
+     										.each(function(data,i){
+     											var legend_span = legend_div.append('span').attr("class","legend-span")
 
-       													legend_span.append("span").attr('class',"legend-icon-span")
-       																		.append('svg').attr("class","legend-icon")
-       																		.append('rect')
-       																		// .attr("rx","10")
-																					.attr("ry","20")
-																					.attr("class","legend-icon")
-																					// .attr("width","18")
-																					// .attr("height","10")
-																					.style("fill",colors_svg_layer0[i])
-																legend_span.append('span')
-																						.attr('class',"legend-text")
-							              								.html(function(d,i){return data.keyword})
+     													legend_span.append("p").attr('class',"legend-icon-p")
+     																		.append('svg').attr("class","legend-icon")
+     																		.append('rect')
+     																		// .attr("rx","10")
+																				.attr("ry","20")
+																				.attr("class","legend-icon")
+																				// .attr("width","18")
+																				// .attr("height","10")
+																				.style("fill",colors_svg_layer0[i])
+															legend_span.append('p')
+																					.attr('class',"legend-text")
+						              								.html(function(d,i){return data.keyword})
 
-       										})
+     										})
 
        				
        		})
 
        		function getSecondLayer (data){ // for rendering second layer of circles
+       			var allCirclePosL1 =[];
 						d3.select('#layer-1').selectAll("*").remove();
 
 						showLayer("#layer-0","#layer-1");//for removing elements of layer1
@@ -124,11 +135,19 @@ angular.module('d3BubbleChart', [])
        			svg_layer1.selectAll('circle')
        								.data(data.data)
      									.enter().append('circle')
-											.attr("r", function(d,i) { return (Math.sqrt(d.potentialSales - i*100) / Math.PI)	 }) // first layer circle radius calculations
-       								.attr("cx",function(d,i){ 
-       									var intialSpacing = 100+100*i;
-       									var preCircleDiameter = i===0?0: (Math.sqrt(d.potentialSales - i*100) / Math.PI)*2;
-       									return intialSpacing+ (preCircleDiameter) + 50
+											.attr("r", function(d,i) {
+												var r =  Math.sqrt(d.potentialSales - i*100) / Math.PI;
+												allCirclePosL1.push({r:r})
+												return r	 }) // second layer circle radius calculations
+       								.attr("cx",function(d,i){
+
+       									var intialSpacing = i!==0?0:150;
+       									var c = intialSpacing + allCirclePosL1[i].r;
+       									if(i>0){
+       										c = allCirclePosL1[i-1].c + allCirclePosL1[i-1].r + allCirclePosL1[i].r + 50;
+       									}
+       									allCirclePosL1[i].c = c;
+       									return c;
        								})
        								.attr('cy',100)
 											.style("stroke",function(d,i){return colors_svg_layer1[i]})
@@ -138,7 +157,7 @@ angular.module('d3BubbleChart', [])
    										.each(function(data,i){
    											var legend_span = legend_div.append('div').attr("class","legend-span")
 
-												legend_span.append("span").attr('class',"legend-icon-span")
+												legend_span.append("p").attr('class',"legend-icon-p")
 																	.append('svg').attr("class","legend-icon")
 																	.append('rect')
 																	// .attr("rx","10")
@@ -147,7 +166,7 @@ angular.module('d3BubbleChart', [])
 																	// .attr("width","18")
 																	// .attr("height","10")
 																	.style("fill",colors_svg_layer1[i])
-												legend_span.append('span')
+												legend_span.append('p')
 																	.attr('class',"legend-text")
 		              								.html(function(d,i){return data.name})
 
@@ -208,7 +227,6 @@ angular.module('d3BubbleChart', [])
 							      						.sort(function(a, b) { return b.value - a.value; });
 
 						pack(heiarchyData);
-						console.log(heiarchyData,"heiarchyData",heiarchyData.descendants())
 
 				    var layer2_close = d3.select('#layer-2')
 				    										.append("a")
@@ -241,7 +259,6 @@ angular.module('d3BubbleChart', [])
 			        						var data = d.data;
 			        						if(d.children) return;
 			        						var state = decideTooltipPosition(d);
-			        						console.log("onmouseover",d)  //Mouse event
 							            d3.select(this)
 						                .style("cursor", "pointer")
 						                .style("stroke-width",5)
@@ -267,21 +284,17 @@ angular.module('d3BubbleChart', [])
 									    	})
 									    .on("mouseout", function(d){
 			        					if(d.children) return;
-									      //Mouse event
-			        					console.log("onmousout")  //Mouse event
+							            d3.select(this)
+							                .style("cursor", "normal")
+							                .style("stroke-width", 2)
+							                .transition()
+							                .duration(500)
 
-									            d3.select(this)
-									                .style("cursor", "normal")
-									                .style("stroke-width", 2)
-									                .transition()
-									                .duration(500)
-
-									            myTool
-									                .style("opacity", "0")            
-									                .style("display", "none")  //The tooltip disappears
-									                .transition()  //Opacity transition when the tooltip disappears
-									                .duration(500)
-
+							            myTool
+							                .style("opacity", "0")            
+							                .style("display", "none")  //The tooltip disappears
+							                .transition()  //Opacity transition when the tooltip disappears
+							                .duration(500)
 								    	});
 
 						var tableData = normalizedData.children;

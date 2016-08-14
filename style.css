@@ -61,23 +61,30 @@ body{
   height:10px;
 }
 
-.legend-icon-span{
-  height:15px;
-  width:22px;
+.legend-icon-p{
+  /* height: 100%; */
+  /* width: 57px; */
+  display: inline-block;
+  /* padding: 0px; */
+  margin: 8px;
 }
 
 .legend-span{
-  display: inline-block;
+  /*display: inline-block;*/
   float: left;
-  width: 150px;
+  width: auto;
 }
 
 .legend-text{
-  color: white;
-  font-size: 13px;
-  font-weight: 600;
-  margin: 0 25px 5px 15px;
-  vertical-align: top;
+    display: inline-block;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 17px 5px 0px;
+    /* vertical-align: top; */
+    /* min-height: 10px; */
+    /* width: 100%; */
+    /* margin: 0px; */
 }
 .axis{
   fill: none;
