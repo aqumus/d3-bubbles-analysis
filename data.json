@@ -1,0 +1,536 @@
+[
+  {
+    "keyword": "INDUSTRY",
+    "size":60,
+    "data": [
+      {
+        "actualSales": 55264,
+        "potentialSales": 14496,
+        "expense": 99402,
+        "revenue": 31659,
+        "experienceScore": 47,
+        "sentimentScore": 61,
+        "focusScore": 51,
+        "engagementScore": 77,
+        "name": "Utilities -Water, Gas, Electric",
+        "leads": [
+          {
+            "createdDate": 1470166901000,
+            "updatedDate": 1470166901000,
+            "deletedDate": null,
+            "leadId": "17544506-888c-4858-8654-6ceeb7b02eb7",
+            "firstName": "Conner",
+            "lastName": "Johnson",
+            "company": "Bank of America",
+            "leadValue": 10417,
+            "sessionsAttended": 20,
+            "id": "17544506-888c-4858-8654-6ceeb7b02eb7"
+          },
+          {
+            "createdDate": 1470166901000,
+            "updatedDate": 1470166901000,
+            "deletedDate": null,
+            "leadId": "56519864-61d0-4986-a188-12903940ab03",
+            "firstName": "Jill",
+            "lastName": "Jones",
+            "company": "General Motors",
+            "leadValue": 9523,
+            "sessionsAttended": 39,
+            "id": "56519864-61d0-4986-a188-12903940ab03"
+          },
+          {
+            "createdDate": 1470166901000,
+            "updatedDate": 1470166901000,
+            "deletedDate": null,
+            "leadId": "929acc82-0187-49f5-b042-49237ec18ca3",
+            "firstName": "Jim",
+            "lastName": "Lane",
+            "company": "HomeDepot",
+            "leadValue": 16622,
+            "sessionsAttended": 13,
+            "id": "929acc82-0187-49f5-b042-49237ec18ca3"
+          },
+          {
+            "createdDate": 1470166901000,
+            "updatedDate": 1470166901000,
+            "deletedDate": null,
+            "leadId": "b901af2b-acf3-46cb-8283-90b9a082ee34",
+            "firstName": "Bill",
+            "lastName": "Cruise",
+            "company": "Coca-Cola",
+            "leadValue": 3910,
+            "sessionsAttended": 32,
+            "id": "b901af2b-acf3-46cb-8283-90b9a082ee34"
+          }
+        ]
+      },
+      {
+        "actualSales": 48529,
+        "potentialSales": 58219,
+        "expense": 53312,
+        "revenue": 80397,
+        "experienceScore": 47,
+        "sentimentScore": 34,
+        "focusScore": 25,
+        "engagementScore": 13,
+        "name": "Insurance - General",
+        "leads": [
+          {
+            "createdDate": 1470166900000,
+            "updatedDate": 1470166900000,
+            "deletedDate": null,
+            "leadId": "7c327c45-fb11-4a82-81db-1cf3ccdc0e9a",
+            "firstName": "David",
+            "lastName": "Miller",
+            "company": "Publix",
+            "leadValue": 10157,
+            "sessionsAttended": 22,
+            "id": "7c327c45-fb11-4a82-81db-1cf3ccdc0e9a"
+          }
+        ]
+      },
+      {
+        "actualSales": 18492,
+        "potentialSales": 3723,
+        "expense": 86260,
+        "revenue": 49954,
+        "experienceScore": 9,
+        "sentimentScore": 21,
+        "focusScore": 85,
+        "engagementScore": 22,
+        "name": "Life Sciences",
+        "leads": [
+          {
+            "createdDate": 1470166900000,
+            "updatedDate": 1470166900000,
+            "deletedDate": null,
+            "leadId": "9095d49e-535b-47fe-9901-d4caae3c2102",
+            "firstName": "Juan",
+            "lastName": "Lane",
+            "company": "HomeDepot",
+            "leadValue": 19961,
+            "sessionsAttended": 25,
+            "id": "9095d49e-535b-47fe-9901-d4caae3c2102"
+          },
+          {
+            "createdDate": 1470166900000,
+            "updatedDate": 1470166900000,
+            "deletedDate": null,
+            "leadId": "b19d6d50-1f9f-4cf9-a81f-e251c5a08898",
+            "firstName": "Victor",
+            "lastName": "Johnson",
+            "company": "Bank of America",
+            "leadValue": 9042,
+            "sessionsAttended": 2,
+            "id": "b19d6d50-1f9f-4cf9-a81f-e251c5a08898"
+          },
+          {
+            "createdDate": 1470166900000,
+            "updatedDate": 1470166900000,
+            "deletedDate": null,
+            "leadId": "cb34994e-781f-482d-abe9-6a6f2e459853",
+            "firstName": "Sally",
+            "lastName": "Smith",
+            "company": "Starbucks",
+            "leadValue": 8079,
+            "sessionsAttended": 0,
+            "id": "cb34994e-781f-482d-abe9-6a6f2e459853"
+          }
+        ]
+      },
+      { 
+        "actualSales": 13920,
+        "potentialSales": 66684,
+        "expense": 81617,
+        "revenue": 81666,
+        "experienceScore": 97,
+        "sentimentScore": 89,
+        "focusScore": 98,
+        "engagementScore": 45,
+        "name": "Travel & Transportation",
+        "leads": [
+          {
+            "createdDate": 1470166901000,
+            "updatedDate": 1470166901000,
+            "deletedDate": null,
+            "leadId": "031c01c2-b7ac-46e4-8e08-067f6a4b2ea9",
+            "firstName": "Victor",
+            "lastName": "Johnson",
+            "company": "Bank of America",
+            "leadValue": 4067,
+            "sessionsAttended": 5,
+            "id": "031c01c2-b7ac-46e4-8e08-067f6a4b2ea9"
+          },
+          {
+            "createdDate": 1470166901000,
+            "updatedDate": 1470166901000,
+            "deletedDate": null,
+            "leadId": "2e563bfa-07f1-43ea-8b6e-474c51efcf0c",
+            "firstName": "Jeff",
+            "lastName": "Cruise",
+            "company": "Bank of America",
+            "leadValue": 4855,
+            "sessionsAttended": 17,
+            "id": "2e563bfa-07f1-43ea-8b6e-474c51efcf0c"
+          }
+        ]
+      },
+      {
+        "actualSales": 63628,
+        "potentialSales": 96892,
+        "expense": 41403,
+        "revenue": 82200,
+        "experienceScore": 81,
+        "sentimentScore": 4,
+        "focusScore": 18,
+        "engagementScore": 99,
+        "name": "Telecommunications",
+        "leads": [
+          {
+            "createdDate": 1470166901000,
+            "updatedDate": 1470166901000,
+            "deletedDate": null,
+            "leadId": "30a16a14-8447-41a4-aa62-0f572d113797",
+            "firstName": "Amy",
+            "lastName": "Miller",
+            "company": "Coca-Cola",
+            "leadValue": 15543,
+            "sessionsAttended": 25,
+            "id": "30a16a14-8447-41a4-aa62-0f572d113797"
+          },
+          {
+            "createdDate": 1470166901000,
+            "updatedDate": 1470166901000,
+            "deletedDate": null,
+            "leadId": "43179824-6846-4dd8-8369-0c7df26770d1",
+            "firstName": "Mark",
+            "lastName": "Jones",
+            "company": "Bank of America",
+            "leadValue": 6086,
+            "sessionsAttended": 36,
+            "id": "43179824-6846-4dd8-8369-0c7df26770d1"
+          },
+          {
+            "createdDate": 1470166901000,
+            "updatedDate": 1470166901000,
+            "deletedDate": null,
+            "leadId": "47891981-99c9-4319-8f35-eb233acc06d6",
+            "firstName": "Kate",
+            "lastName": "Park",
+            "company": "General Motors",
+            "leadValue": 13931,
+            "sessionsAttended": 5,
+            "id": "47891981-99c9-4319-8f35-eb233acc06d6"
+          },
+          {
+            "createdDate": 1470166901000,
+            "updatedDate": 1470166901000,
+            "deletedDate": null,
+            "leadId": "ca261700-0f93-4911-9502-4382819cf15e",
+            "firstName": "Conner",
+            "lastName": "Jackson",
+            "company": "Cisco",
+            "leadValue": 19650,
+            "sessionsAttended": 49,
+            "id": "ca261700-0f93-4911-9502-4382819cf15e"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "EC",
+    "size":130,
+    "data": [
+      {
+        "actualSales": 33411,
+        "potentialSales": 4427,
+        "expense": 12808,
+        "revenue": 33975,
+        "experienceScore": 34,
+        "sentimentScore": 42,
+        "focusScore": 49,
+        "engagementScore": 42,
+        "name": "Virtual",
+        "leads": [
+          {
+            "createdDate": 1470166900000,
+            "updatedDate": 1470166900000,
+            "deletedDate": null,
+            "leadId": "d3738df7-a7ec-405b-9670-0ab7f7fa7c5d",
+            "firstName": "Jeremy",
+            "lastName": "Smith",
+            "company": "IBM",
+            "leadValue": 2993,
+            "sessionsAttended": 31,
+            "id": "d3738df7-a7ec-405b-9670-0ab7f7fa7c5d"
+          }
+        ]
+      },
+      {
+        "actualSales": 35878,
+        "potentialSales": 77640,
+        "expense": 1359,
+        "revenue": 53264,
+        "experienceScore": 43,
+        "sentimentScore": 63,
+        "focusScore": 80,
+        "engagementScore": 14,
+        "name": "Non-proprietary",
+        "leads": [
+          {
+            "createdDate": 1470166900000,
+            "updatedDate": 1470166900000,
+            "deletedDate": null,
+            "leadId": "3d4d650e-7ed8-4508-b91a-7918257d9a45",
+            "firstName": "Rickard",
+            "lastName": "Evans",
+            "company": "Apple",
+            "leadValue": 1399,
+            "sessionsAttended": 6,
+            "id": "3d4d650e-7ed8-4508-b91a-7918257d9a45"
+          },
+          {
+            "createdDate": 1470166900000,
+            "updatedDate": 1470166900000,
+            "deletedDate": null,
+            "leadId": "572f7e5b-f853-4f5a-8660-d2f5fa562b20",
+            "firstName": "Amy",
+            "lastName": "Johnson",
+            "company": "Publix",
+            "leadValue": 13287,
+            "sessionsAttended": 40,
+            "id": "572f7e5b-f853-4f5a-8660-d2f5fa562b20"
+          },
+          {
+            "createdDate": 1470166900000,
+            "updatedDate": 1470166900000,
+            "deletedDate": null,
+            "leadId": "9902258a-aff8-4fea-aad9-385782df2528",
+            "firstName": "Victor",
+            "lastName": "Miller",
+            "company": "Coca-Cola",
+            "leadValue": 6411,
+            "sessionsAttended": 26,
+            "id": "9902258a-aff8-4fea-aad9-385782df2528"
+          }
+        ]
+      },
+      {
+        "actualSales": 36223,
+        "potentialSales": 65246,
+        "expense": 51268,
+        "revenue": 52243,
+        "experienceScore": 45,
+        "sentimentScore": 92,
+        "focusScore": 87,
+        "engagementScore": 92,
+        "name": "Proprietary",
+        "leads": [
+          {
+            "createdDate": 1470166900000,
+            "updatedDate": 1470166900000,
+            "deletedDate": null,
+            "leadId": "0f81bb33-2ece-41f2-b436-0bc79075748f",
+            "firstName": "Todd",
+            "lastName": "Miller",
+            "company": "Apple",
+            "leadValue": 15791,
+            "sessionsAttended": 32,
+            "id": "0f81bb33-2ece-41f2-b436-0bc79075748f"
+          },
+          {
+            "createdDate": 1470166900000,
+            "updatedDate": 1470166900000,
+            "deletedDate": null,
+            "leadId": "83bf98d9-1791-44e5-8500-faf75b602594",
+            "firstName": "Todd",
+            "lastName": "Evans",
+            "company": "Apple",
+            "leadValue": 13964,
+            "sessionsAttended": 37,
+            "id": "83bf98d9-1791-44e5-8500-faf75b602594"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "ET",
+    "size":95,
+    "data": [
+      {
+        "actualSales": 91822,
+        "potentialSales": 88515,
+        "expense": 82622,
+        "revenue": 46057,
+        "experienceScore": 77,
+        "sentimentScore": 51,
+        "focusScore": 2,
+        "engagementScore": 30,
+        "name": "Internal",
+        "leads": [
+          {
+            "createdDate": 1470166901000,
+            "updatedDate": 1470166901000,
+            "deletedDate": null,
+            "leadId": "548038e2-aa38-40e9-b931-1f65534dfdf1",
+            "firstName": "Jill",
+            "lastName": "Stuart",
+            "company": "IBM",
+            "leadValue": 5768,
+            "sessionsAttended": 40,
+            "id": "548038e2-aa38-40e9-b931-1f65534dfdf1"
+          },
+          {
+            "createdDate": 1470166901000,
+            "updatedDate": 1470166901000,
+            "deletedDate": null,
+            "leadId": "a414225d-56f3-449c-aebc-7c9cea70427a",
+            "firstName": "Sally",
+            "lastName": "Smith",
+            "company": "Apple",
+            "leadValue": 6248,
+            "sessionsAttended": 8,
+            "id": "a414225d-56f3-449c-aebc-7c9cea70427a"
+          },
+          {
+            "createdDate": 1470166901000,
+            "updatedDate": 1470166901000,
+            "deletedDate": null,
+            "leadId": "b8ce7287-841a-4f9f-abde-2ea73047a2e4",
+            "firstName": "Amy",
+            "lastName": "Evans",
+            "company": "HomeDepot",
+            "leadValue": 18203,
+            "sessionsAttended": 38,
+            "id": "b8ce7287-841a-4f9f-abde-2ea73047a2e4"
+          }
+        ]
+      },
+      {
+        "actualSales": 81798,
+        "potentialSales": 93658,
+        "expense": 43632,
+        "revenue": 94262,
+        "experienceScore": 85,
+        "sentimentScore": 69,
+        "focusScore": 83,
+        "engagementScore": 89,
+        "name": "Customer",
+        "leads": [
+          {
+            "createdDate": 1470166901000,
+            "updatedDate": 1470166901000,
+            "deletedDate": null,
+            "leadId": "70a1945c-e08f-48d1-9f2e-5aa079f0cfee",
+            "firstName": "Rickard",
+            "lastName": "Smith",
+            "company": "Bank of America",
+            "leadValue": 2815,
+            "sessionsAttended": 43,
+            "id": "70a1945c-e08f-48d1-9f2e-5aa079f0cfee"
+          }
+        ]
+      },
+      {
+        "actualSales": 48140,
+        "potentialSales": 28455,
+        "expense": 30282,
+        "revenue": 90138,
+        "experienceScore": 33,
+        "sentimentScore": 43,
+        "focusScore": 30,
+        "engagementScore": 72,
+        "name": "Sales Enablement",
+        "leads": [
+          {
+            "createdDate": 1470166901000,
+            "updatedDate": 1470166901000,
+            "deletedDate": null,
+            "leadId": "771afb65-0f92-43ab-9445-82f9f67225f1",
+            "firstName": "Bob",
+            "lastName": "Stuart",
+            "company": "General Motors",
+            "leadValue": 12896,
+            "sessionsAttended": 28,
+            "id": "771afb65-0f92-43ab-9445-82f9f67225f1"
+          },
+          {
+            "createdDate": 1470166901000,
+            "updatedDate": 1470166901000,
+            "deletedDate": null,
+            "leadId": "c443e1f8-0daa-4707-aab9-1edf2e7c86c2",
+            "firstName": "Conner",
+            "lastName": "Miller",
+            "company": "Apple",
+            "leadValue": 5869,
+            "sessionsAttended": 1,
+            "id": "c443e1f8-0daa-4707-aab9-1edf2e7c86c2"
+          },
+          {
+            "createdDate": 1470166901000,
+            "updatedDate": 1470166901000,
+            "deletedDate": null,
+            "leadId": "dd94564e-23ec-471f-878c-42a2efedbc13",
+            "firstName": "Sally",
+            "lastName": "Jackson",
+            "company": "IBM",
+            "leadValue": 6254,
+            "sessionsAttended": 26,
+            "id": "dd94564e-23ec-471f-878c-42a2efedbc13"
+          }
+        ]
+      },
+      {
+        "actualSales": 9625,
+        "potentialSales": 99309,
+        "expense": 33915,
+        "revenue": 10218,
+        "experienceScore": 48,
+        "sentimentScore": 48,
+        "focusScore": 9,
+        "engagementScore": 52,
+        "name": "Recognition",
+        "leads": [
+          {
+            "createdDate": 1470166901000,
+            "updatedDate": 1470166901000,
+            "deletedDate": null,
+            "leadId": "0a599a10-7c8f-4e0a-b779-c58b680b8ac0",
+            "firstName": "Bill",
+            "lastName": "Jackson",
+            "company": "Bank of America",
+            "leadValue": 19993,
+            "sessionsAttended": 26,
+            "id": "0a599a10-7c8f-4e0a-b779-c58b680b8ac0"
+          },
+          {
+            "createdDate": 1470166901000,
+            "updatedDate": 1470166901000,
+            "deletedDate": null,
+            "leadId": "31594a95-5b26-4671-a661-f69661ef95e4",
+            "firstName": "Kate",
+            "lastName": "Cruise",
+            "company": "IBM",
+            "leadValue": 9191,
+            "sessionsAttended": 12,
+            "id": "31594a95-5b26-4671-a661-f69661ef95e4"
+          },
+          {
+            "createdDate": 1470166901000,
+            "updatedDate": 1470166901000,
+            "deletedDate": null,
+            "leadId": "8017dc0f-d225-4a41-8496-0649dd302020",
+            "firstName": "Jeff",
+            "lastName": "Miller",
+            "company": "Coca-Cola",
+            "leadValue": 9169,
+            "sessionsAttended": 21,
+            "id": "8017dc0f-d225-4a41-8496-0649dd302020"
+          }
+        ]
+      }
+    ]
+  }
+]
