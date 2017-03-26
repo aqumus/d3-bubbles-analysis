@@ -2,6 +2,7 @@ angular.module('d3BubbleChart', [])
 .controller('d3Controller',function($scope,$http){
 
 })
+
 .directive('bubbleChart',function($parse,$window,$http){
 	return{
 		restrict:'EA',
@@ -154,6 +155,7 @@ angular.module('d3BubbleChart', [])
    										.style("fill", "none")
        								.style("pointer-events","visible")
    										.style("stroke-width", 2)
+     									.style("cursor", "pointer")    
    										.each(function(data,i){
    											var legend_span = legend_div.append('div').attr("class","legend-span")
 
@@ -171,7 +173,7 @@ angular.module('d3BubbleChart', [])
 		              								.html(function(d,i){return data.name})
 
      									})
-     									.on('mouseover',function(d,i){
+     									.on('click',function(d,i){
      										showLayer(null,"#layer-2")
      										getHoverData(d,i,colors_svg_layer1[i])
      									})
@@ -193,7 +195,7 @@ angular.module('d3BubbleChart', [])
        		function showLayer(toHide,toShow){
 
        				if(toShow =="#layer-2"){
-       					d3.select("#layer-1").style("opacity","0.4")
+       					d3.select("#layer-1").style("opacity","0.2")
        					return d3.select(toShow).style("opacity","1").style("z-index","103");
        				}
 
@@ -242,6 +244,7 @@ angular.module('d3BubbleChart', [])
        																.attr("width",layerswidth)
 																			.attr("height", layersheight)
 																			.style("margin-left","38%")
+																			.style("padding-top","10px")
 																			.append('g');
 
 	       		svg_layer2.selectAll("circle")
